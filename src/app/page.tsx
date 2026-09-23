@@ -8,10 +8,15 @@ export default function Home() {
   };
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-base-200">
-      <button className="btn btn-primary" onClick={showToast}>
+    <div className="flex flex-col items-center justify-center min-h-screen bg-base-200">
+      <button className="btn btn-primary m-5" onClick={showToast}>
         Show Toast
       </button>
+
+      <p className="font-oswald text-3xl m-5">Oswald font test</p>
+
+      <p className="font-inter text-3xl m-5">Inter font test</p>
+
       <ToastContainer />
     </div>
   );
