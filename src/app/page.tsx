@@ -1,9 +1,9 @@
-"use client";
+import HeroBanner from "@/components/home/HeroBanner";
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-center min-h-screen">
-      <h1 className="text-3xl font-bold">Workouts</h1>
+    <div className="container mx-auto px-4">
+      <HeroBanner />
     </div>
   );
 }
