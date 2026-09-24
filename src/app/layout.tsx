@@ -17,9 +17,9 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       data-theme="dark"
       className={`${oswald.variable} ${inter.variable} `}
     >
-      <body>
+      <body className="flex flex-col min-h-screen bg-zinc-950">
         <Header />
-        {children}
+        <main className="flex-1 py-6">{children}</main>
         <Footer />
       </body>
     </html>
